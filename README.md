@@ -10,18 +10,18 @@ The sdk should be used by any third party app that need to communicate with Finn
 *   finney wallet app installed on the device
 
 ### Gradle
-    implementation 'org.bitbucket.SirinOS:Wallet-SDK:0.0.1'
+    implementation 'org.bitbucket.SirinOS:Wallet-SDK:1.0.1'
 jitpack authentication required
 
 ### Usage
 Init the sdk in your activity onCreate, and add callback when initialization complete
 ##
 
-        WalletCommunicationManager.addFinishInitListener {
+        WalletSDKManager.addFinishInitListener {
             // Your code
         }
 
-        WalletCommunicationManager.init(applicationContext)
+        WalletSDKManager.init(applicationContext)
 
 After the finish init callback is being fired, you can use any method in the api: 
 
@@ -32,7 +32,7 @@ get the deafult public address the user have in his wallet according to the coin
     
      
     
-        WalletCommunicationManager.getPublicAddress("ETH")
+        WalletSDKManager.getPublicAddress("ETH")
 
 get the rpc address that being used for the coin type: 
 
@@ -40,7 +40,7 @@ get the rpc address that being used for the coin type:
     
     
     
-        WalletCommunicationManager.getRpcAddress("ETH")
+        WalletSDKManager.getRpcAddress("ETH")
 
 get the chain id that being used for the coin type:
 
@@ -48,7 +48,7 @@ get the chain id that being used for the coin type:
     
     
     
-        WalletCommunicationManager.getChainId("ETH")
+        WalletSDKManager.getChainId("ETH")
 
 send transaction - open the wallet with the coin type, recipient, amount and data values that being passed via the sdk:
 
@@ -70,7 +70,7 @@ airdrop - get message signed by device key for airdrop registration, the returne
 
 
     fun airDrop() {
-        WalletCommunicationManager.airDrop("lorem ipson lorem ipson lorem ipson lorem ipson lorem ipson lorem ipson lorem ipson lorem ipson", successMethod = {signature ->
+        WalletSDKManager.airDrop("lorem ipson lorem ipson lorem ipson lorem ipson lorem ipson lorem ipson lorem ipson lorem ipson", successMethod = {signature ->
             toastValue("Transaction Succeed : ${byteArrayToHexString(signature)}")
             Log.d(TAG, "airdrop_der = ${byteArrayToHexString(signature)}")
         }, failureMethod = {err ->
@@ -84,7 +84,7 @@ signing personal/public message - get message signed by device key for dapps reg
 
 
     fun startSigningMessage() {
-        WalletCommunicationManager.startSigningMessage(signed_message_txt.text.toString(),
+        WalletSDKManager.startSigningMessage(signed_message_txt.text.toString(),
                 "lorem ipson lorem ipson lorem ipson lorem ipson lorem ipson lorem ipson lorem ipson lorem ipson ",
                 successMethod = {signature ->
             toastValue("Transaction Succeed : ${byteArrayToHexString(signature)}")
