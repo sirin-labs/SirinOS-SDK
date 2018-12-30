@@ -11,7 +11,15 @@ The sdk should be used by any third party app that need to communicate with Finn
 
 ### Gradle
     implementation "com.github.sirin-labs:SirinOS-SDK:1.0.1"
-jitpack authentication required
+
+    // add this in project scope build file
+    repositories {
+        // repos
+        maven {
+            url "https://jitpack.io"
+        }
+    }
+
 
 ### Usage
 Init the sdk in your activity onCreate, and add callback when initialization complete
