@@ -54,26 +54,45 @@ send transaction - open the wallet with the coin type, recipient, amount and dat
 
 *   void sendTransaction(String coinType, String recipient, double value, String data, IWalletCommunicationCallback callback)
     
-    
 
-        val data = SendRequestEntity(recipient = "0x008023500DfB949b8854C329C6237bFC3c060Fd6", amount = 0.001)
+
+        val data = SendRequestEntity(recipient = "0x008023500DfB949b8854C329C6237bFC3c060Fd6", amount = 0.001) // amount range is 10^17 > value > 10^-10, recipient should be valid bitcoin/ether address
         WalletCommunicationManager.sendTransaction(data, successMethod = { hash ->
             toastValue("Transaction Succeed : $hash")
         }, failureMethod = {err ->
             toastValue("Transaction Failed : $err")
         })
 
-# Example Apps:
-    https://bitbucket.org/SirinOS/wallet-sdk-demo/src
 
-    getPublicAddress
-    signTransaction
-    sendTransaction
-    startSigningMessage
-    airDrop
-    getRpcAddress
-    getChainId
-    getWalletId
-    getPublicKey
-    getSignedMessage
+airdrop - get message signed by device key for airdrop registration, the returned message encoded in der
+
+*   void airDrop(String desc, IWalletByteResultCallback callback);
+
+
+    fun airDrop() {
+        WalletCommunicationManager.airDrop("lorem ipson lorem ipson lorem ipson lorem ipson lorem ipson lorem ipson lorem ipson lorem ipson", successMethod = {signature ->
+            toastValue("Transaction Succeed : ${byteArrayToHexString(signature)}")
+            Log.d(TAG, "airdrop_der = ${byteArrayToHexString(signature)}")
+        }, failureMethod = {err ->
+            toastValue("Transaction Failed : $err")
+        })
+    }
+
+signing personal/public message - get message signed by device key for dapps registration(personal or public message)
+
+    *   void startSigningMessage(String desc, IWalletByteResultCallback callback);
+
+
+    fun startSigningMessage() {
+        WalletCommunicationManager.startSigningMessage(signed_message_txt.text.toString(),
+                "lorem ipson lorem ipson lorem ipson lorem ipson lorem ipson lorem ipson lorem ipson lorem ipson ",
+                successMethod = {signature ->
+            toastValue("Transaction Succeed : ${byteArrayToHexString(signature)}")
+        }, failureMethod = {err ->
+            toastValue("Transaction Failed : $err")
+        })
+    }
+
+# Example Apps:
+    https://github.com/sirin-labs/SirinOS-SDK-DemoApp
 
