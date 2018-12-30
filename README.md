@@ -10,7 +10,7 @@ The sdk should be used by any third party app that need to communicate with Finn
 *   finney wallet app installed on the device
 
 ### Gradle
-    implementation 'org.bitbucket.SirinOS:Wallet-SDK:1.0.1'
+    implementation "com.github.sirin-labs:SirinOS-SDK:1.0.1"
 jitpack authentication required
 
 ### Usage
