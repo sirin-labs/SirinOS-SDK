@@ -15,7 +15,7 @@ import com.sirinlabs.walletconnectionsdk.entities.SendRequestEntity
 import com.sirinlabs.walletconnectionsdk.exceptions.WalletServiceNotBindedException
 import java.lang.ref.WeakReference
 
-class WalletCommunicationManager {
+class WalletSDKManager {
 
     companion object {
 
