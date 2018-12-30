@@ -57,7 +57,7 @@ send transaction - open the wallet with the coin type, recipient, amount and dat
 
 
         val data = SendRequestEntity(recipient = "0x008023500DfB949b8854C329C6237bFC3c060Fd6", amount = 0.001) // amount range is 10^17 > value > 10^-10, recipient should be valid bitcoin/ether address
-        WalletCommunicationManager.sendTransaction(data, successMethod = { hash ->
+        WalletSDKManager.sendTransaction(data, successMethod = { hash ->
             toastValue("Transaction Succeed : $hash")
         }, failureMethod = {err ->
             toastValue("Transaction Failed : $err")
