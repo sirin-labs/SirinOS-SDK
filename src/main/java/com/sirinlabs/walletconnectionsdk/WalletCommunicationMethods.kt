@@ -77,7 +77,7 @@ class WalletCommunicationMethods {
             }
         }
 
-        mService?.startSigningMessage(packageName, desc, indShowASCII, callback)
+        mService?.startSigningMessageASCII(packageName, desc, indShowASCII, callback)
     }
 
     fun airDrop(desc: String, successMethod : (result : ByteArray) -> Unit, failureMethod :(errorMessage : String) -> Unit) {
