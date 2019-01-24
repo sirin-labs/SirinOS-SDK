@@ -30,6 +30,10 @@ class WalletCommunicationMethods {
         mListeners = mListeners.plus(listener)
     }
 
+    fun disconnect() {
+        mConnection?.onServiceDisconnected()
+    }
+
     fun informFinishInit() {
         mListeners.map {
             it.invoke()

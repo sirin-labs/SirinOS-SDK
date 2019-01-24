@@ -31,6 +31,10 @@ class WalletSDKManager {
             bindWalletService()
         }
 
+        fun disconnect() {
+            unbindWalletService()
+        }
+
         // fire when service binded
         fun addFinishInitListener(listener: () -> Unit) {
             methods.addFinishInitListener(listener)
@@ -50,6 +54,10 @@ class WalletSDKManager {
             // Exception, not initialized or killed
 
             mContextRef.get()?.bindService(serviceIntent, methods.mConnection, Context.BIND_AUTO_CREATE)
+        }
+
+        private fun unbindWalletService() {
+            mContextRef.get()?.unbindService(methods.mConnection)
         }
 
         fun forceBindWalletService() {
