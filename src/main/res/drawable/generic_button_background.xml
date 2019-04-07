@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ code:<br />Copyright (C) 2018 SIRIN LABS AG
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- pressed -->
+    <item android:state_enabled="true" android:state_pressed="true"
+        android:drawable="@drawable/generic_button_pressed_background"/>
+    <!-- enabled -->
+    <item android:state_enabled="false"
+        android:drawable="@drawable/generic_button_disabled_background"/>
+    <!-- default -->
+    <item android:drawable="@drawable/generic_button_enabled_background"/>
+
+</selector>

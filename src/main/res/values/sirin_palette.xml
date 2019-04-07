@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ code:<br />Copyright (C) 2018 SIRIN LABS AG
+  -->
+
+<resources>
+    <color name="sirin_palette_color_C1">#1c3038</color>
+    <color name="sirin_palette_color_C2">#80888d</color>
+    <color name="sirin_palette_color_C3">#1aa1ac</color>
+    <color name="sirin_palette_color_C4">#bc172a</color>
+    <color name="sirin_palette_color_C5">#bdbfc2</color>
+    <color name="sirin_palette_color_C6">#335c67</color>
+    <color name="sirin_palette_color_C7">#ecf2f3</color>
+    <color name="sirin_palette_color_C8">#129a42</color>
+    <color name="sirin_palette_color_C9">#721340</color>
+    <color name="sirin_palette_color_C10">#ffffff</color>
+    <color name="sirin_palette_color_C11">#000000</color>
+    <color name="sirin_palette_color_C12">#31b6a2</color>
+    <color name="sirin_palette_color_C13">#0a5862</color>
+    <color name="sirin_palette_color_C14">#80070f12</color>
+    <color name="sirin_palette_color_C15">#59303a3d</color>
+    <color name="sirin_palette_color_C16">#dae2e7</color>
+    <color name="sirin_palette_color_C17">#f9fbfb</color>
+    <color name="sirin_palette_color_C18">#fdab38</color>
+    <color name="sirin_palette_color_C19">#a8376c</color>
+    <color name="sirin_palette_color_C20">#cc97c6</color>
+    <color name="sirin_palette_color_C21">#64adc3</color>
+    <color name="sirin_palette_color_C22">#ff353a3d</color>
+    <color name="sirin_palette_color_C23">#00ffd9</color>
+</resources>

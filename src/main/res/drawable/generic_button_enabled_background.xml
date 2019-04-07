@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ code:<br />Copyright (C) 2018 SIRIN LABS AG
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Style for "rounded_re" -->
+    <!-- Add this snippet to layer-list xml in drawable. -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/generic_button_enabled_background_solid_color" />
+            <corners android:radius="@dimen/generic_button_radius" />
+            <gradient
+                android:angle="45"
+                android:endColor="@color/generic_button_enabled_background_gradient_end_color"
+                android:startColor="@color/generic_button_enabled_background_gradient_start_color"
+                android:type="linear" />
+            <item android:shadowColor="@color/generic_button_enabled_background_shadow_color" />
+            <!-- TextView shadow offsets do not respect scale. -->
+            <item android:shadowDx="0" />
+            <item android:shadowDy="10" />
+        </shape>
+    </item>
+</layer-list>

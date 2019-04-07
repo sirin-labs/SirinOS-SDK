@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ code:<br />Copyright (C) 2018 SIRIN LABS AG
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- text size -->
+    <dimen name="medium_text_size">15sp</dimen>
+
+    <!-- width & height -->
+    <dimen name="sirin_button_width">140dp</dimen>
+    <dimen name="sirin_button_height">40dp</dimen>
+    <dimen name="generic_button_radius">10dp</dimen>
+
+</resources>

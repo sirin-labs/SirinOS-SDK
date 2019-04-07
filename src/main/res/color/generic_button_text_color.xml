@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ code:<br />Copyright (C) 2018 SIRIN LABS AG
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true"
+        android:color="@color/generic_button_enabled_text_color"/> <!-- enabled -->
+    <item android:state_enabled="false"
+        android:color="@color/generic_button_disabled_text_color"/> <!-- disabled -->
+    <item android:state_enabled="true" android:state_pressed="true"
+        android:color="@color/generic_button_enabled_text_color"/> <!-- pressed -->
+    <item android:color="@color/generic_button_enabled_text_color"/> <!-- default -->
+</selector>

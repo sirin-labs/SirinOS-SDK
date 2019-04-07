@@ -1,0 +1,13 @@
+<!--
+  ~ code:<br />Copyright (C) 2018 SIRIN LABS AG
+  -->
+
+<resources>
+    <style name="sirin_button_style">
+        <item name="android:background">@drawable/generic_button_background</item>
+        <item name="android:textColor">@color/generic_button_text_color</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:layout_width">@dimen/sirin_button_width</item>
+        <item name="android:layout_height">@dimen/sirin_button_height</item>
+    </style>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ code:<br />Copyright (C) 2018 SIRIN LABS AG
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Style for "rounded_re" -->
+    <!-- Add this snippet to layer-list xml in drawable. -->
+    <item>
+        <shape android:shape="rectangle" >
+            <corners android:radius="@dimen/generic_button_radius" />
+            <solid android:color="@color/generic_button_disabled_fill_color"/>
+        </shape>
+    </item>
+</layer-list>

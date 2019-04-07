@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ code:<br />Copyright (C) 2018 SIRIN LABS AG
+  -->
+
+<resources>
+    <!-- generic button colors -->
+    <color name="generic_button_enabled_text_color">@color/sirin_palette_color_C10</color>
+    <color name="generic_button_disabled_text_color">@color/sirin_palette_color_C2</color>
+    <color name="generic_button_disabled_fill_color">@color/sirin_palette_color_C16</color>
+    <color name="generic_button_frame">@color/sirin_palette_color_C11</color>
+
+    <color name="generic_button_enabled_background_solid_color">@color/sirin_palette_color_C10</color>
+    <color name="generic_button_enabled_background_gradient_start_color">@color/sirin_palette_color_C13</color>
+    <color name="generic_button_enabled_background_gradient_end_color">@color/sirin_palette_color_C12</color>
+    <color name="generic_button_enabled_background_shadow_color">@color/sirin_palette_color_C14</color>
+
+</resources>
