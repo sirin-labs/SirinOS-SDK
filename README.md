@@ -15,7 +15,7 @@ The sdk should be used by any third party app that need to communicate with Finn
   
 ###  Gradle    :hammer:
    ```gradle
- implementation "com.github.sirin-labs:SirinOS-SDK:1.0.2"
+ implementation "com.github.sirin-labs:SirinOS-SDK:1.0.3"
    
    // add this in project scope build file 
    repositories {
@@ -26,12 +26,19 @@ The sdk should be used by any third party app that need to communicate with Finn
   
 ### Usage  :briefcase:
   
-Init the sdk in your activity onCreate, and add callback when initialization complete:
+Init the sdk in your onResume , and add callback when initialization complete:
   
   ```kotlin             
 WalletSDKManager.addFinishInitListener { // Your code }  
 WalletSDKManager.init(applicationContext)  
 ``` 
+
+After you finish working with the sdk (most of the times on the activity onPause) disconnect from the service
+  
+  ```kotlin             
+WalletSDKManager.disconnect()
+``` 
+
 After the finish init callback is being fired, you can use any method in the api:   
   
   
