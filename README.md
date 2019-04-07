@@ -99,5 +99,13 @@ successMethod = { hash -> toastValue("Transaction Succeed : $hash") },
 										      toastValue("Transaction Failed : $err") })
   }  
 ```
+
+* For design integrity, you can apply out style on the action buttons related to the sdk. for example:
+ ```xml
+    <Button
+        android:text="Pay With Sirin"
+        style="@style/sirin_button_style"/>  
+```
+
 # Example Apps :iphone:  
  https://github.com/sirin-labs/SirinOS-SDK-DemoApp
