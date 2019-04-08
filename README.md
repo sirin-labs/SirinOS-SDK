@@ -15,7 +15,7 @@ The sdk should be used by any third party app that need to communicate with Finn
   
 ###  Gradle    :hammer:
    ```gradle
- implementation "com.github.sirin-labs:SirinOS-SDK:1.0.3"
+ implementation "com.github.sirin-labs:SirinOS-SDK:1.0.4"
    
    // add this in project scope build file 
    repositories {
